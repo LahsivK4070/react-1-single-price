@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+/* ///////////////////// Header Component//////////////////// */
+header{
+    margin: 3rem auto 0;
+    width: 75%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px 10px 0 0;
+}
+
+header .heading-1{
+    font-size: 20px;
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+header .para-1{
+    font-size: 18px;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+header .para-2{
+    font-size: 16px;
+    color: hsl(218, 22%, 67%);
+    line-height: 1.75;
+    font-weight: 400;
+}
+
+/* ///////////////////// Center Component /////////////////// */
+
+.center{
+    background-color: hsl(179, 62%, 43%);
+    padding: 2rem;
+    margin: auto;
+    width: 75%;
+}
+
+.center .heading-2{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+.center .rate{
+    display: flex;
+    align-items: center;
+    color: hsl(204, 43%, 93%);
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+}
+
+.center .rate span{
+    font-size: 35px;
+    color: white;
+    font-weight: 700;
+    padding-right: 5px;
+}
+
+.center .rateInfo{
+    color: hsl(204, 43%, 93%);
+    margin-bottom: 1.75rem;
+    font-size: 16px;
+}
+
+.center button{
+    font-size: 18px;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem 0;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.068);
+}
+
+.center button:hover{
+    transform: scale(1.025);
+}
+
+/* ///////////////////// Footer Component /////////////////////*/
+
+footer{
+    background-color: hsl(179, 42%, 53%);
+    padding: 2rem;
+    margin: 0 auto 3rem;
+    width: 75%;
+    border-radius: 0 0 10px 10px;
+}
+
+footer h1{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 1.5rem;
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 0;
+    color: hsl(204, 43%, 93%);
+    font-size: 16px;
+}
+
+footer ul li{
+    padding-bottom: 5px;
+}
+
+/* //////////////////Desktop Design/////////// */
+
+@media (min-width: 850px) {
+    
+    .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 670px;
+        margin: 2rem auto;
+    }
+
+    header{
+        padding: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    header .heading-1{
+        font-size: 24px;
+    }
+
+    .center{
+        padding: 2rem;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border-radius: 0 0 0 10px;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    footer{
+        padding: 2rem;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        border-radius: 0 0 10px 0;
+        width: 100%;
+    }
+}
